@@ -30,10 +30,7 @@ sealed class Screen {
     data class Score(val finalScore: Int) : Screen()
 }
 
-/**
- * The main activity for the BrainTeaser application.
- * Sets up the Jetpack Compose environment and the navigation host.
- */
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,11 +47,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-/**
- * Composable function that acts as the navigation host for the application.
- * It manages the current screen state and switches between different screens.
- * The app starts with the Splash screen.
- */
+
 @SuppressLint("ContextCastToActivity")
 @Composable
 fun AppNavigationHost() {
@@ -97,21 +90,17 @@ fun AppNavigationHost() {
             // userName is hardcoded for now, could be passed from StartScreen if implemented
             userName = "Player",
             onHome = { currentScreen = Screen.Start },
-            onExit = { activity.finish() } // <-- Call finish() on the Activity here
+            onExit = { activity.finish() }
         )
     }
 }
 
-/**
- * Preview for the AppNavigationHost composable.
- * This allows previewing the starting state of the app's UI.
- */
+
 @Preview(showBackground = true)
 @Composable
 fun AppNavigationHostPreview() {
     BrainTeaserTheme {
-        // Preview the AppNavigationHost. It will start in the Splash state.
-        // Note: Activity.finish() will not work in a preview environment.
+
         AppNavigationHost()
     }
 }
