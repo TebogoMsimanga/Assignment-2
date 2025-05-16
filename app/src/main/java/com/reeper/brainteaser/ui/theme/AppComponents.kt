@@ -12,12 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.reeper.brainteaser.R
 
-/**
- * Reusable composable function for the standard application header.
- * Displays a greeting and a user profile icon.
- *
- * @param userName The name of the user to display in the greeting.
- */
+
 @Composable
 fun AppHeader(userName: String) {
     Row(

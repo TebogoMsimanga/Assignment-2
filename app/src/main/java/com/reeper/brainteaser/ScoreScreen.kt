@@ -18,16 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.reeper.brainteaser.ui.theme.*
 
-/**
- * Composable function for the Score screen.
- * Displays the user's final score and options to navigate.
- *
- * @param score The user's final score.
- * @param total The total number of questions in the quiz.
- * @param userName The name of the user (hardcoded for now).
- * @param onExit Lambda function to be invoked when the Exit button is clicked.
- * @param onHome Lambda function to be invoked when the Home button is clicked.
- */
+
 @Composable
 fun ScoreScreen(
     score: Int, // Score is now required, defaults removed as it's passed from navigation
@@ -196,20 +187,18 @@ fun ScoreScreen(
     }
 }
 
-/**
- * Preview for the ScoreScreen composable.
- */
+
 @Preview(showBackground = true)
 @Composable
 fun ScoreScreenPreview() {
     BrainTeaserTheme {
-        // Pass dummy data and lambdas for the preview
+
         ScoreScreen(
             score = 4,
             total = 5,
             userName = "PreviewUser",
-            onExit = { /* Do nothing in preview */ },
-            onHome = { /* Do nothing in preview */ }
+            onExit = {  },
+            onHome = {  }
         )
     }
 }

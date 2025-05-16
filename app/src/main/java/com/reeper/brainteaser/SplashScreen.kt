@@ -15,13 +15,7 @@ import com.reeper.brainteaser.ui.theme.AppColors
 import com.reeper.brainteaser.ui.theme.BrainTeaserTheme
 import kotlinx.coroutines.delay
 
-/**
- * Composable function for the Splash Screen.
- * Displays the app logo and a tagline with a gradient background.
- * Navigates to the next screen after a short delay.
- *
- * @param onTimeout Lambda function to be invoked after the splash screen delay.
- */
+
 @Composable
 fun SplashScreen(onTimeout: () -> Unit) {
     // Use LaunchedEffect to perform an action after a delay when the composable enters the composition.
@@ -65,9 +59,7 @@ fun SplashScreen(onTimeout: () -> Unit) {
     }
 }
 
-/**
- * Preview for the SplashScreen composable.
- */
+
 @Preview(showBackground = true)
 @Composable
 fun SplashScreenPreview() {

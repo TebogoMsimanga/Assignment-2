@@ -20,12 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.reeper.brainteaser.ui.theme.*
 
-/**
- * Composable function for the application's start screen.
- * Displays a welcome message, app logo, and a button to start the quiz.
- *
- * @param onStartClick Lambda function to be invoked when the Start button is clicked.
- */
+
 @Composable
 fun StartScreen(onStartClick: () -> Unit) {
     // Use a Box to fill the screen and set padding and background
@@ -114,9 +109,7 @@ fun StartScreen(onStartClick: () -> Unit) {
     }
 }
 
-/**
- * Preview for the StartScreen composable.
- */
+
 @Preview(showBackground = true)
 @Composable
 fun StartScreenPreview() {

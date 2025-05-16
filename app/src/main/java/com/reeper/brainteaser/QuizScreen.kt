@@ -37,13 +37,7 @@ val sampleQuestions = listOf(
     Question(R.drawable.q5, "Is the sun a planet?", false)
 )
 
-/**
- * Composable function for the Quiz screen.
- * Manages the quiz flow, displays questions, timer, and handles user input.
- *
- * @param onQuizComplete Lambda function invoked when the quiz is finished,
- * passing the final score.
- */
+
 @Composable
 fun QuizScreen(onQuizComplete: (Int) -> Unit) {
     // State to hold the shuffled list of questions. Remembered across recompositions.
@@ -311,9 +305,6 @@ fun QuizScreen(onQuizComplete: (Int) -> Unit) {
     }
 }
 
-/**
- * Preview for the QuizScreen composable.
- */
 @Preview(showBackground = true)
 @Composable
 fun QuizScreenPreview() {
