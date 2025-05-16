@@ -114,6 +114,6 @@ fun StartScreen(onStartClick: () -> Unit) {
 @Composable
 fun StartScreenPreview() {
     BrainTeaserTheme {
-        StartScreen(onStartClick = { /* Do nothing in preview */ })
+        StartScreen(onStartClick = { })
     }
 }

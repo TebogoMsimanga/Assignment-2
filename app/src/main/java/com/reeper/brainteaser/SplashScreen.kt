@@ -65,6 +65,6 @@ fun SplashScreen(onTimeout: () -> Unit) {
 fun SplashScreenPreview() {
     BrainTeaserTheme {
         // In the preview, the onTimeout lambda does nothing
-        SplashScreen(onTimeout = { /* Preview: Splash screen timeout */ })
+        SplashScreen(onTimeout = {  })
     }
 }

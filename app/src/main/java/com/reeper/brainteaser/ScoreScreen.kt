@@ -196,7 +196,7 @@ fun ScoreScreenPreview() {
         ScoreScreen(
             score = 4,
             total = 5,
-            userName = "PreviewUser",
+            userName = "TBG",
             onExit = {  },
             onHome = {  }
         )

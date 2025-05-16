@@ -309,7 +309,7 @@ fun QuizScreen(onQuizComplete: (Int) -> Unit) {
 @Composable
 fun QuizScreenPreview() {
     BrainTeaserTheme {
-        // Pass a dummy lambda for the preview
+
         QuizScreen(onQuizComplete = { finalScore ->
             println("Quiz Finished with score: $finalScore")
         })
